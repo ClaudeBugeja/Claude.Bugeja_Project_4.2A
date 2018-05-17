@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<?php
-    session_start();
-?>
 <html>
     <head>
         <title>Redefined</title>
         <link rel="icon" href="images/blacklogo.png" type="image" width="20" height="20">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -14,7 +11,7 @@
         <link rel="stylesheet" href="Home.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                  
           
@@ -100,160 +97,29 @@
                
             </div>
         </nav>
-    <br/>
-        <div>
-            
-        </div>
-        <div class="row nopadding" style="width:100%;">
-            <div class="col-lg-1 col-sm-1 col-md-1"></div>
-        <div class="col-lg-10 col-sm-10 col-md-10" style="text-align: center;">
-            <img id="homelogo" src="images/Black_Logo.png">
-            
-        </div>
-            <div class="col-lg-1 col-sm-1 col-md-1"></div>
-        </div>
-        <div class="row nopadding" style="width:100%;">
-            <div class="col-lg-1 col-sm-1 col-md-1"></div>
-        <div class="col-lg-10 col-sm-10 col-md-10" style="text-align: center;">
-            <h1 id="slogan" style="font-style: oblique;  font-family: 'Times New Roman', Times, serif;">Redifining Shopping</h1>
-        </div>
-            <div class="col-lg-1 col-sm-1 col-md-1"></div>
-        </div>
-        
         <br/>
-                    <div class="col-lg-12 nopadding">
-                
-                <div id="mobslider">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width:100%;">
-          
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" >
-                      <img id="banner" class="d-block w-100" src="images/s9banner.png" alt="First slide">
-                       
-                    </div>
-                    <div class="carousel-item">
-                      <img id="banner" class="d-block w-100" src="images/QLED2018slider.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img id="banner" class="d-block w-100" src="images/iPhone-X-Banner.jpg" alt="Third slide">
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              
-                </div>
+        <div style="margin-left: 2%; margin-right: 2%;">
+        <h1 class="display-1" style="font-style: oblique; text-align:left;">About Us</h1>
+        <hr/>
+        <p>Redifined is one of the largest retailers in Malta and Authorised Reseller for most of the top brands including Apple.
+Redifined retails a full range of Computer and IT products, a large selection of Audio & Video products, Small Home Appliances, Panasonic Air-conditioning systems and a vast range of brands for bags and travel luggage including  American Tourister plus others.</p>
+        <br/>
+            <p>The Redifined objective is the affirmation and strengthening of our renowned name of Redifined as “Your Trusted Choice” </p>
+         
+            <p style="margin-left: 2%;">1. We always act in the customer's interests</p>
+            <p style="margin-left: 2%;">2. We make sure we always do as we say we will</p>
+            <p style="margin-left: 2%;">3. If something goes wrong – we admit it and deal with the problem. </p>
+
+            <p>Redifined is an Authorised Reseller for all the big brands including Apple, Acer, Asus, HP, Microsoft, Bose and a lot more.</p> 
+            <br/>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <img src="images/AuthorisedReseller.png" style="width:100%;">
             </div>
-            
-    
-        
-      
-            
-        <div id="scetion">
-            
-            
-            <div class="col-lg-12 col-md-12 col-sm-12 nopadding" style="height: 100%;">
-                <a href="Mobile.php">
-                <div class="row nopadding" style="height: 100%;">
-                <div class="col-lg-12 col-md-12 col-sm-12 nopadding" style="height: 100%;">
-                     <div class="hovereffect">
-                        <img id="effect1" class="img-responsive" src="images/gaming.jpg" style="width:100%;">
-                         
-                        <div class="overlay">
-                            <h2>Gaming</h2>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
+        <br/>
+            <br/>
         </div>
-                </a>   
-        </div>
-        
-        <div id="scetionin">
-        <div class="row nopadding" style="width: 100%;">
-            <div class="col-lg-6 col-md-6 col-sm-12 nopadding">
-                <a href="Mobile.php">
-                     <div class="hovereffect">
-                        <img id="effect" class="img-responsive" src="images/sound.jpg" style="width:100%;">
-                        <div class="overlay">
-                            <h2>Sound</h2>
-                        </div>
-                    </div>
-                </a>
-                </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 nopadding">
-                <a href="Mobile.php">
-                <div class="hovereffect">
-                    <img id="effect" src="images/computing.jpg" style="width:100%;">
-                    <div class="overlay">
-                            <h2>Computing</h2>
-                    </div>
-                </div>
-                </a>
-                </div>
-        </div>
-      
-        <div class="row nopadding" style="width: 100%;">
-             <div class="col-lg-6 col-md-6 col-sm-12 nopadding">
-                 <a href="Mobile.php">
-                 <div class="hovereffect">
-                    <img id="effect" src="images/phones.jpg" style="width:100%;">
-                     <div class="overlay">
-                            <h2>Mobiles</h2>
-                     </div>
-                 </div>
-                 </a>
-            </div>
-             <div class="col-lg-6 col-md-6 col-sm-12 nopadding">
-                 <a href="Mobile.php">
-                 <div class="hovereffect">
-                    <img id="effect" src="images/keyboard.jpg" style="width:100%;">
-                     <div class="overlay">
-                            <h2>Peripherals</h2>
-                    </div>
-                 </div>
-                 </a>
-            </div>
-        
-            
-            
-        </div>
-            </div>
-        
-        
-    
-       
-        
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <a href="Vision.html">
-                <div class="row"> 
-                <div class="col-lg-12 col-md-12 col-sm-12 nopadding">   
-                     <div class="hovereffect">
-                        <img id="effect1" class="img-responsive" src="images/tv.jpg" style="width:100%;">
-                        <div class="overlay">
-                            <h2>Vision</h2>
-                        </div>   
-                    </div>   
-                </div>   
-        </div>
-          </a>      
-        </div>
-        </div>
-        
-      
-        <div class="col-lg-12 col-md-12 col-sm-12 nopadding">
-            <img src="images/AuthorisedReseller.png" style="width: 100%;">
-        </div>
-      <!--Footer-->
-      <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" style="background-color:#E8E8E8">
+              <!--Footer-->
+            <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" style="background-color:#E8E8E8">
       
           <!--Footer Links-->
           <div class="container text-center text-md-left">
@@ -322,10 +188,7 @@
       
       </footer>
       <!--/.Footer-->
-                      
-  
-        <script>
-            
+           <script>
             document.getElementById('searchmob').style.display = "none";
             document.getElementById('bagdesk').style.display = "none";
             document.getElementById('profiledesk').style.display = "none";
@@ -350,7 +213,6 @@
             var x = window.matchMedia("(max-width: 770px)")
             myFunction(x) // Call listener function at run time
             x.addListener(myFunction) // Attach listener function on state changes     
-        </script>      
-
+        </script>   
     </body>
 </html>
