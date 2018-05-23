@@ -144,8 +144,7 @@
             if(isset($_POST['Search'])){
                 $Search = $_POST["search"];
                
-                $conn = mysqli_connect('localhost', 'root', '', 'project') 
-                    or die('Cannot connect to db');
+                require_once("Connection_Project.php");
                 $query2 = "Select CategoryID from category where CategoryName = '$Search'";
                 $result2 = mysqli_query($conn, $query2);
                 if(mysqli_num_rows($result2) > 0){
@@ -186,7 +185,7 @@
         </div>
         <?php
           if(isset($_POST['Submit'])){
-                        $conn = mysqli_connect('localhost','root','','project') or die("hello");
+                        require_once("Connection_Project.php");
                         
                         $query = "Insert into cart (AccountID, ProductID) Values ('$_SESSION[AccountID]', '$_SESSION[ProductID]')";
                         $result = mysqli_query($conn , $query);

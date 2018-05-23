@@ -341,7 +341,11 @@ li{
 }
 @media only screen and (max-width: 450px) {
     
-     
+     #logo{
+    width:45px;
+    height: 45px;
+  
+    }
     
    #row2{
     height:100%;
@@ -477,10 +481,7 @@ li{
          text-align: center;
         font-size: 50px;
     }
-    #logo{
-    width:45px;
-    height: 45px;
-    }
+    
 
     hr{
         background-color: white;

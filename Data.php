@@ -71,16 +71,15 @@
                     if(isset($_POST['Submit'])){
                         $Username = $_POST["email"];
                         $Password = $_POST["Password"];
-                        $conn = mysqli_connect('localhost', 'root', '', 'project') 
-                                or die('Cannot connect to db');
+                        require_once("Connection_Project.php");
                         $query = "select AccountID, Email, Password, FirstName from user where Email = '$Username' and Password = '$Password'";
-                        $result = mysqli_query($conn, $query)
-                                    or die ("Error in query" . mysqli_error($conn));;
+                        $result = mysqli_query($conn, $query);
                            if(mysqli_num_rows($result) == 0){
                                    $row = mysqli_fetch_row($result);
                                    echo "<p style='color:red; margin-left:5%;'>$row[1] Email or Password does not exist</p>";
                                }
                             else{
+                                require_once("Connection_Project.php");
                                 $row = mysqli_fetch_row($result);
                                 $email = $row[1];
                                 $_SESSION['Email'] = $email;
@@ -145,8 +144,7 @@
             $comments = $_POST['Password'];
             $emailTo = 'claude.bugeja.b42219@mcast.edu.mt'; #later
             $Pass = "Mcast11001";
-            $conn = mysqli_connect('localhost', 'root', '', 'project') 
-                    or die('Cannot connect to db');
+            require_once("Connection_Project.php");
             $query = "select Email from user where Email = '$username'";
             $result = mysqli_query($conn, $query)
                         or die ("Error in query" . mysqli_error($conn));;

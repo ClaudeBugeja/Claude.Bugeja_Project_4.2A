@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="Home.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                  
           
@@ -20,14 +20,20 @@
           </button >
                 
                 <a class="navbar-brand" href="index.php">
-                <img id="logo" src="images/YASSSSBITCH.png" alt="">
+                <img id="logo" src="images/logo-white.png" alt="">
               </a> 
                 
-                <a href="Search.php">
+                <a href="Data.php">
                     <img  id="profile"  src="images/profile.png" width="20" height="20">
                 </a>
-
+                
+                  <a href="Search.php">
+               <img id="searchmob" src="images/searching.png" style="width: 20px; height: 20px; ">
+              </a>  
+                
+                <a href="Cart.php" >
                    <img id="bag" src="images/bag-logo.png" width="20" height="20">
+                </a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               
            <ul class="navbar-nav" style="width: 100%;">
@@ -37,33 +43,33 @@
                   </li>
                     <hr/>
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Computing</a>
+                    <a class="nav-link" href="Mobile.php">Computing</a>
                      
                   </li>
                <hr/>
                   <li class="nav-item active">
-                    <a class="nav-link disabled" href="#">Peripherals</a>
+                    <a class="nav-link disabled" href="Mobile.php">Peripherals</a>
                      
                   </li>
                 <hr/>
                     <li class="nav-item active">
-                    <a class="nav-link disabled" href="#">Vision</a>
+                    <a class="nav-link disabled" href="Mobile.php">Vision</a>
                   
                   </li>
               <hr/>
                     <li class="nav-item active">
-                    <a class="nav-link disabled" href="#">Sound</a>
+                    <a class="nav-link disabled" href="Mobile.php">Sound</a>
 
                   </li>
               <hr/>
                     <li class="nav-item active">
-                    <a class="nav-link disabled" href="inde1.html">Gaming</a>
+                    <a class="nav-link disabled" href="Mobile.php">Gaming</a>
                   </li>
                <hr/>
 
              
                 </ul>
-              <a href="Data.php" style="margin-right: 5%;">
+              <a href="Data.php" style="margin-left:10%; margin-right: 5%;">
                <img id="profiledesk" src="images/profile.png" href="inde1.html" style="width: 20px; height: 20px; ">
               </a>
               
@@ -76,7 +82,7 @@
                <img id="bagdesk" src="images/bag-logo.png" style="width: 20px; height: 20px;">
               </a> 
               
-              <form action="inde.php" method="post">
+              <form action="index.php" method="post">
               <button type="submit" style="margin-right: 5%; border:none;" name="logout">
                <img src="images/logout.png" href="inde1.html" style="margin-bottom:20%; width: 20px; height: 20px; ">
               </button>
@@ -138,8 +144,8 @@
       
                   <!--First column-->
                   <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">REDIFINED</h6>
-                      <p>Redifining Shopping in every way. Cheapest prices , the best client support and the most user-friendly website out there to encourage every demographic to get onboard in redifine shopping.</p>
+                      <h6 class="text-uppercase mb-4 font-weight-bold">REDEFINED</h6>
+                      <p>Redefining Shopping in every way. Cheapest prices , the best client support and the most user-friendly website out there to encourage every demographic to get onboard in redifine shopping.</p>
                   </div>
                   <!--/.First column-->
       
@@ -148,8 +154,8 @@
                   <!--Second column-->
                   <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                       <h6 class="text-uppercase mb-4 font-weight-bold">Information</h6>
-                      <p><a href="OpenHours.html" style="color: black;">Opening Hours</a></p>
-                      <p><a href="AboutUs.html" style="color: black;">About Us</a></p>
+                      <p><a href="OpenHours.php" style="color: black;">Opening Hours</a></p>
+                      <p><a href="AboutUs.php" style="color: black;">About Us</a></p>
                       <p><a href="Contact.php" style="color: black;">Contact Us</a></p>
                     
                   </div>
@@ -182,40 +188,14 @@
                   <div class="col-md-8 col-lg-7">
       
                       <!--Copyright-->
-                      <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="inde1.html" style="color: black;"><strong> Redifined.com</strong></a></p>
+                      <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="inde1.html" style="color: black;"><strong> Redefined.com</strong></a></p>
                       <!--/.Copyright-->
       
                   </div>
                   <!--Grid column-->
       
                   <!--Grid column-->
-                  <div class="col-md-4 col-lg-5 ml-lg-0">
-      
-                      <!--Social buttons-->
-                      <div class="text-center text-md-right">
-                          <div class="row">
-                              
-                              <div class="col-lg-2 col-sm-2">
-                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><img src="images/fbLogo.png" style="width: 25%;"></a></li>
-                              </div>
-                              
-                              <div class="col-lg-2 col-sm-2">
-                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><img src="images/twitterLogo.png" style="width: 50%;"></a></li>
-                              </div>
-                              
-                                <div class="col-lg-2 col-sm-2">
-                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><img src="images/instagramLogo.png" style="width: 50%;"></a></li>
-                                </div>
-                              
-                                <div class="col-lg-2 col-sm-2">
-                                   <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><img src="images/googlePlus.png" style="width: 60%;"></a></li>
-                                </div>
-                                </div>
-                      </div>
-                      <!--/.Social buttons-->
-      
-                  </div>
-                  <!--Grid column-->
+                  
       
               </div>
       
@@ -224,23 +204,27 @@
       </footer>
       <!--/.Footer-->
                 <script>
+            document.getElementById('searchmob').style.display = "none";
             document.getElementById('bagdesk').style.display = "none";
             document.getElementById('profiledesk').style.display = "none";
             function myFunction(x) {
                 if (x.matches) { // If media query matches
                     document.getElementById('profile').style.display = "block";
                     document.getElementById('bag').style.display = "block";
+                    document.getElementById('searchmob').style.display = "block";
                     document.getElementById('bagdesk').style.display = "none";
                     document.getElementById('profiledesk').style.display = "none";
+                    document.getElementById('search').style.display = "none";
                 } else {
+                    document.getElementById('searchmob').style.display = "none";
+                    document.getElementById('search').style.display = "block";
                     document.getElementById('profile').style.display = "none";
                     document.getElementById('bag').style.display = "none";
                     document.getElementById('bagdesk').style.display = "block";
                     document.getElementById('profiledesk').style.display = "block";
                 }
             }
-
-            var x = window.matchMedia("(max-width: 700px)")
+            var x = window.matchMedia("(max-width: 770px)")
             myFunction(x) // Call listener function at run time
             x.addListener(myFunction) // Attach listener function on state changes     
         </script>

@@ -117,8 +117,7 @@
        
         <div class="col-lg-2 col-md-4" style="margin-left:10.5%; margin-top:5%; background-color:white; height:100%;">
              <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'project') 
-                    or die('Cannot connect to db');
+                require_once("Connection_Project.php");
                 $query = "select ProductID, ProductName, Description, Stock, Price, Image from product where ProductName = 'Samsung S8'";
                 $result =mysqli_query($conn, $query)
                             or die ("Error in query" . mysqli_error($conn));
@@ -145,7 +144,7 @@
                }   
                 
           if(isset($_POST['Submit'])){
-                        $conn = mysqli_connect('localhost','root','','project') or die("hello");
+                       require_once("Connection_Project.php");
                         
                         $query = "Insert into cart (AccountID, ProductID) Values ('$_SESSION[AccountID]', '$_SESSION[ProductID]')";
                         $result = mysqli_query($conn , $query);

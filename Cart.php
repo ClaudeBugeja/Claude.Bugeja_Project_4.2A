@@ -115,7 +115,7 @@
 					</tr>
 					<tr>
                         <?php
-                            $conn = mysqli_connect('localhost','root','','project') or die("hello");
+                            require_once("Connection_Project.php");
                             $query = "Select ProductID from cart where AccountID = '$_SESSION[AccountID]'";
                             $result = mysqli_query($conn, $query);
                             while($row = mysqli_fetch_assoc($result)) {
