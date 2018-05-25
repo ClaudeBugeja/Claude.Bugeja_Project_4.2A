@@ -115,7 +115,12 @@
 					</tr>
 					<tr>
                         <?php
+                            error_reporting(0);
                             require_once("Connection_Project.php");
+                            $id = $_GET['id'];
+                            
+                             $query = "Insert into cart (AccountID, ProductID) Values ('$_SESSION[AccountID]', '$id')";
+                            mysqli_query($conn , $query);
                             $query = "Select ProductID from cart where AccountID = '$_SESSION[AccountID]'";
                             $result = mysqli_query($conn, $query);
                             while($row = mysqli_fetch_assoc($result)) {

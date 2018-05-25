@@ -150,6 +150,8 @@
                 if(mysqli_num_rows($result2) > 0){
                     $row = mysqli_fetch_row($result2);
                     $Product = $row[0];
+                }else{
+                    $Product = $Search;
                 }
              
                 $query = "select ProductID, ProductName, Description, Stock, Price, Image from product where  CategoryID = '$Product' or ProductName = '$Search'";
@@ -158,6 +160,7 @@
                 while($row = mysqli_fetch_assoc($result)) {
                     ?>
                     <div class="col-lg-2 col-md-4" style="margin-left:8.5%; height:100%;">
+
                     <?php
                     echo "$row[Image]";
                     echo "<p></p>";
@@ -170,35 +173,26 @@
                         echo "<h5 style='width:100%; margin-top:5%; color:red;'>Out of stock</h5>";
                     }
                     echo "<hr>";
-                    echo "   <form action='Search.php' method='post'><img src='images/bag-logo-black.png' width='20' height='20'><input type='submit' class='btn btn-primary' style='margin-left:5%; margin-right:5%;' name='Submit' value='Add'></form>";
+                    echo "<form action='Search.php' method='post'><img src='images/bag-logo-black.png' width='20' height='20'><a href='http://localhost:8080/Cart.php?id=$row[ProductID]'' >Add</a></form>";
+                   
+                   
+                   
                     
-                    $ProductID = "$row[ProductID]";
-                    $_SESSION['ProductID'] = $ProductID;
                     ?>
+                   
             </div>
                     <?php
                }   
             }
             
+            
+           
+
+       
         ?>
         
         </div>
-        <?php
-          if(isset($_POST['Submit'])){
-                        require_once("Connection_Project.php");
-                        
-                        $query = "Insert into cart (AccountID, ProductID) Values ('$_SESSION[AccountID]', '$_SESSION[ProductID]')";
-                        $result = mysqli_query($conn , $query);
-                    
-                        //$Pname = $_POST['hidden_name'];
-                        //$price = $_POST['hidden_price'];
-                        //$_SESSION['Pname']= $Pname;
-                        //$_SESSION['price'] = $price;
-                        
-             }
-
-        ?>
-
+        
       <!--Footer-->
       <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" style="background-color:#E8E8E8">
       
